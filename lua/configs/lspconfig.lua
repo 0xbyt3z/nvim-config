@@ -1,4 +1,4 @@
--- EXAMPLE 
+-- EXAMPLE
 local on_attach = require("nvchad.configs.lspconfig").on_attach
 local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
@@ -15,9 +15,29 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+--rust
+lspconfig.rust_analyzer.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
+}
+
 -- typescript
 lspconfig.tsserver.setup {
   on_attach = on_attach,
   on_init = on_init,
   capabilities = capabilities,
+}
+
+--python
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  filetypes = { "python" },
+}
+
+--tailwindcss
+lspconfig.tailwindcss.setup {
+  on_attach = on_attach,
+  on_init = on_init,
 }

@@ -46,8 +46,10 @@ return {
     opts = {
       ensure_installed = {
         "typescript-language-server",
+        "tailwindcss-language-server",
         "rust-analyser",
         "lua-language-server",
+        "pyright",
         "stylua",
         "html-lsp",
         "css-lsp",
