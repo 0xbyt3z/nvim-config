@@ -48,7 +48,6 @@ return {
         "typescript-language-server",
         "tailwindcss-language-server",
         "rustywind",
-        "rust-analyser",
         "lua-language-server",
         "pyright",
         "stylua",
