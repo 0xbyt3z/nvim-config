@@ -45,6 +45,7 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
+        "rust-analyzer",
         "typescript-language-server",
         "tailwindcss-language-server",
         "rustywind",
@@ -54,6 +55,8 @@ return {
         "html-lsp",
         "css-lsp",
         "prettier",
+        "phpactor",
+        "terraformls",
       },
     },
   },
